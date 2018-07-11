@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+    <head>
+        <title>어서오세요!</title>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+        <style>
+           .content{
+               padding: 10px 40px;
+               margin:100px auto;
+               width:500px;
+               height:500px;
+               /* border:1px solid gray; */
+               background-color: white;
+
+               border-radius: 10px;
+               box-shadow: 10px 10px 20px grey;
+           }
+           th{
+               text-align: center;
+               color:grey;
+               /* background: -webkit-linear-gradient(left bottom,blue, white); */
+           }
+           body{
+               /* background: url('../images/0710-background2.jpg') repeat-x; */
+               background-image: url('mountain.jpg');
+               /* background-size: 100% 40%; */
+               background-repeat: repeat-x;
+               background-color:azure;
+               font-family: 'Abel', sans-serif;
+           }
+           .square-btn-red{
+                background-color: #F05D61;
+           }
+
+           form input{
+               /* padding:10px 30px; */
+
+                display: block;
+                width: 100%;
+                height: 20px;
+                padding: 6px 12px;
+                font-size: 14px;
+                line-height: 1.42857143;
+                color: #555;
+                background-color: #fff;
+                background-image: none;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+                -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+                transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+
+           }
+           form textarea{
+                display: block;
+                width: 100%;
+                height: 100px;
+                padding: 6px 12px;
+                font-size: 14px;
+                line-height: 1.42857143;
+                color: #555;
+                background-color: #fff;
+                background-image: none;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+                -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+                transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+           }
+           table{
+               width:80%;
+           }
+        </style>
+    </head>
+    <body>
+       <div class="content">
+            
+           <form><h1>Let's Get Started</h3>
+               <table>
+                   <tr><th>ID:</th><td><input type="text" name="id"></td></tr>
+                   <tr><th>PW:</th><td><input type="password" name="pw"></td></tr>
+                   <tr><th>Email:</th><td><input type="email" name="email"></td></tr>
+                   <tr>
+                       <th>phone number:</th>
+                       <td><input type="text" name="phone"></td></tr>
+                   <tr><th>introduce yourself:</th><td><textarea name="introduce"></textarea></td></tr>
+                   <tr><td colspan="2" align="right"><button type="submit" class="square-btn-red">OK!</button><button type="reset">Cancel</button></td></tr>
+               </table>
+           </form>
+       </div>
+    </body>
+
+</html>

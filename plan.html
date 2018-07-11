@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+    <head>
+        <title>어서오세요!</title>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+        <style>
+           .content{
+               padding: 10px 40px;
+               margin:100px auto;
+               width:500px;
+               height:650px;
+               /* border:1px solid gray; */
+               background-color: white;
+
+               border-radius: 10px;
+               box-shadow: 10px 10px 20px grey;
+           }
+           label{
+               text-align: justify;
+               color:grey;
+               /* background: -webkit-linear-gradient(left bottom,blue, white); */
+               margin-top: 5px auto;
+           }
+           body{
+               /* background: url('../images/0710-background2.jpg') repeat-x; */
+               background-image: url('mountain.jpg');
+               /* background-size: 100% 40%; */
+               background-repeat: repeat-x;
+               background-color:azure;
+               font-family: 'Abel', sans-serif;
+           }
+           .square-btn-red{
+                background-color: #F05D61;
+           }
+
+           form input{
+               /* padding:10px 30px; */
+
+                display: block;
+                width: 100%;
+                height: 20px;
+                padding: 6px 12px;
+                font-size: 14px;
+                line-height: 1.42857143;
+                color: #555;
+                background-color: #fff;
+                background-image: none;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+                -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+                transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+
+           }
+           form select{
+                display: block;
+                width: 30%;
+                height: 100%;
+                padding: 6px 12px;
+                font-size: 14px;
+                line-height: 1.42857143;
+                color: #555;
+                background-color: #fff;
+                background-image: none;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+                -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+                transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;            
+           }
+           form textarea{
+                display: block;
+                width: 100%;
+                height: 100px;
+                padding: 6px 12px;
+                font-size: 14px;
+                line-height: 1.42857143;
+                color: #555;
+                background-color: #fff;
+                background-image: none;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+                -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+                transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+                resize: none;
+           }
+           form div{
+               width:90%;
+               margin: 10px 0px 10px 0px;
+               font-weight: 800;
+           }
+
+           /* Button */
+          button{
+            background:#1AAB8A;
+            color:#fff;
+            border:none;
+            position:relative;
+            height:60px;
+            font-size:1.6em;
+            padding:0 2em;
+            cursor:pointer;
+            transition:800ms ease all;
+            outline:none;
+            display:block;
+            margin:30px auto;
+          }
+          button:hover{
+            background:#fff;
+            color:#1AAB8A;
+          }
+          button:before,button:after{
+            content:'';
+            position:absolute;
+            top:0;
+            right:0;
+            height:2px;
+            width:0;
+            background: #1AAB8A;
+            transition:400ms ease all;
+          }
+          button:after{
+            right:inherit;
+            top:inherit;
+            left:0;
+            bottom:0;
+          }
+          button:hover:before,button:hover:after{
+            width:100%;
+            transition:800ms ease all;
+          }           
+           /* Button end */
+        </style>
+    </head>
+    <body>
+       <div class="content">
+            
+           <form><h1>Learning Plan Guide</h3>
+               
+                  <div><label>Category</label>
+                  
+                    <select>
+                      <option>English</option>
+                      <option>Spanish</option>
+                      <option>Korean</option>
+                      <option>Programming</option>
+                      <option>Exercise</option>
+                      <option>League of Legend</option>
+                    </select>
+                  </div>
+                   <div><label>I want to</label>
+                   <input type="text" name="objective" placeholder="improve my ability to understand television news."></div>
+
+                   <div><label>In order to (objective)  I can</label>
+                   <input type="text" name="steps" placeholder="practice for 15 minutes everyday."></div>
+
+                   <div><label>How can you demonstrate this work is done and assess your work?</label>
+                   <textarea name="demonstrate" placeholder="I can summarize the stories I listened to on the news and list new vocabulary items I learned.  I can also summarize the stories for my seminar team and discuss them."></textarea></div>
+                   <div><label>
+                   Start week:
+                 </label>
+                   
+                    <input type="week" name="year_week_start">
+                  </div>
+                  <div><label>
+                   End week:
+                 </label>
+                 
+                    <input type="week" name="year_week_end">
+                  </div>
+
+               
+               <button>Save</button>
+           </form>
+       </div>
+    </body>
+
+</html>
